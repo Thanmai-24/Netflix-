@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="sidebar">
+        <img src="images/logo.png" alt="Netflix Logo" class="logo">
+        <ul>
+            <li><a href="#"><img src="images/home-icon.png" alt="Home Icon" class="icon">Home</a></li>
+            <li><a href="#"><img src="images/tv-shows-icon.png" alt="TV Shows Icon" class="icon">TV Shows</a></li>
+            <li><a href="#"><img src="images/movies-icon.png" alt="Movies Icon" class="icon">Movies</a></li>
+            <li><a href="#"><img src="images/new-popular-icon.png" alt="New & Popular Icon" class="icon">New & Popular</a></li>
+            <li><a href="#"><img src="images/my-list-icon.png" alt="My List Icon" class="icon">My List</a></li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">TV Shows</a></li>
+                    <li><a href="#">Movies</a></li>
+                    <li><a href="#">New & Popular</a></li>
+                    <li><a href="#">My List</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Watch Anywhere. Cancel Anytime.</h1>
+                <p>Ready to watch? Enter your email to create or restart your membership.</p>
+                <input type="email" placeholder="Email address">
+                <button>Get Started</button>
+            </div>
+        </section>
+
+        <section class="movie-section">
+            <h2>Popular on Netflix</h2>
+            <div class="movie-slider">
+                <button class="prev" onclick="moveSlide(-1, 'popular')">&#10094;</button>
+                <div class="movie-grid popular">
+                    <div class="movie-item"><img src="images/movie1.jpg" alt="Movie 1"></div>
+                    <div class="movie-item"><img src="images/movie2.jpg" alt="Movie 2"></div>
+                    <div class="movie-item"><img src="images/movie3.jpg" alt="Movie 3"></div>
+                    <div class="movie-item"><img src="images/movie4.jpg" alt="Movie 4"></div>
+                    <div class="movie-item"><img src="images/movie5.jpg" alt="Movie 5"></div>
+                    <div class="movie-item"><img src="images/movie6.jpg" alt="Movie 6"></div>
+                    <!-- Add more movie items as needed -->
+                </div>
+                <button class="next" onclick="moveSlide(1, 'popular')">&#10095;</button>
+            </div>
+        </section>
+
+        <section class="movie-section">
+            <h2>K Drama</h2>
+            <div class="movie-slider">
+                <button class="prev" onclick="moveSlide(-1, 'kdrama')">&#10094;</button>
+                <div class="movie-grid kdrama">
+                    <div class="movie-item"><img src="images/kdrama1.jpg" alt="K Drama 1"></div>
+                    <div class="movie-item"><img src="images/kdrama2.jpg" alt="K Drama 2"></div>
+                    <div class="movie-item"><img src="images/kdrama3.jpg" alt="K Drama 3"></div>
+                    <div class="movie-item"><img src="images/kdrama4.jpg" alt="K Drama 4"></div>
+                    <div class="movie-item"><img src="images/kdrama5.jpg" alt="K Drama 5"></div>
+                    <div class="movie-item"><img src="images/kdrama6.jpg" alt="K Drama 6"></div>
+                    <!-- Add more movie items as needed -->
+                </div>
+                <button class="next" onclick="moveSlide(1, 'kdrama')">&#10095;</button>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2024 Netflix</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
